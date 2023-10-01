@@ -1,18 +1,10 @@
-main{
-    width: 100%;
-    height: calc(100vh - 60px);
-    background-color: #1A253A;
-    margin-top: 60px;
-    background-image: url(../imgs/family.jpg), url(../imgs/Mitchphoto1.jpg);
-    background-size: 70vh, cover;
-    background-repeat: no-repeat;
-    background-position: bottom left calc(50% + 80px), center;
-    display: flex;
+header .header-main-nav ul li{
+    display:flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    z-index: 100;
-    column-gap: 220px;
 }
+
+
 
 main .main-intro h1 {
     font-size: 96px;
@@ -31,129 +23,68 @@ main a {
     background-color: #3965C2;
     padding: 10px 20px;
     width: fit-content;
-}
-main a:hover{
-    background-color: var(--site-color-01-hover);
-}
-
-
-main .main-intro {
-  
+} 
+/*Font for h1*/
+ main .main-intro {
    padding-bottom: 20vh;
-}
+} */ 
 
 
-/*Category Section*/
-.index-category{
-    width: 100%;
-    padding: 60px 0px;
-    padding-left: 50px;
-    background-color: #41A033;
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
-    flex-wrap: wrap;
+* {
+    margin: 0;
+    padding: 0;
 }
-.index-category p{
-    font-family: 'Roboto Condensed', sans-serif;
-    flex-basis: 100%;
-    color: black;
+
+/* Style the header with a background color and center-align text */
+.header {
+    background-color: #c29292;
     text-align: center;
-    padding-bottom: 40px;
-    text-transform: uppercase;
-    font-size: 22px;
+    padding: 10px 0;
+}
+/* Style the navigation bar */
+.navigation {
+    display: flex;
+    justify-content: center;
 }
 
-.index-category-box{
-    width: 160px;
-    height: 120px;
-    background-color:black;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Style the navigation list items */
+.navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px; /* Add spacing between navigation items */
+}
+
+/* Style the navigation links */
+.navigation a {
+    text-decoration: none;
+    color: #2b0b0b;
+    font-weight: bold;
+}
+
+/* Hover effect for navigation links */
+.navigation a:hover {
+    color: #00f; /* Change the color on hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the image horizontally and vertically */
+.center-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-
+    height: 100vh; /* Make the container fill the viewport height */
 }
 
-.index-category-box:nth-child(2){
-    background-image: url(../imgs/FAQ1.jpg);
-
-}
-.index-category-box:nth-child(3){
-    background-image: url(../imgs/Facebook.jpg);
-     
-}
-.index-category-box:nth-child(4){
-    background-image: url(../imgs/Contact.jpg);
-     
-}
-.dark-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    opacity: 0.5;
-    transition: all ease-in-out 200ms;
-}
-.index-category-box:hover .dark-overlay{
-    opacity: 0;
-
-}
-.index-category-box h3{
-    font-size: 30px;
-    line-height: 24px;
-    text-shadow: -2px 2px 4px #000;
-    z-index: 100;
-}
-
-/*About Section*/
-
-.index-about{
-    width: 100%;
-    padding: 60px 0;
-    background-color: #C5E084;
-   
-}
-.index-about-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 60px;
-}
-
-.index-about-img img{
-   width: 300px;
-   border-radius: 300px;
-}
-.index-about-text{
-    flex-basis: 455px;
-    
-}
-.index-about-text h2{
-    flex-basis: 455px;
-    color: black
-}
-.index-about-text p{
-    padding: 20px 0;
-
-}
-
-.index-about-text a{
-    font-size: 18px;
-    display: block;
-    height: 36px;
-    line-height: 36px;
-    background-color: #3965C2;
-    padding: 0 20px;
-    width: fit-content;
-}
-
-.index-about-text a:hover{
-    background-color: var(--site-color-01-hover);
+/* Style the image (optional) */
+.center-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
 }
 
 
